@@ -1,0 +1,15 @@
+.post .meta {
+    color: #666;
+    font-size: 13px;
+}
+
+.content {
+    padding-top: 20px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+img[src*="/reactions/"] {
+    width: 150px;
+    height: auto;
+}

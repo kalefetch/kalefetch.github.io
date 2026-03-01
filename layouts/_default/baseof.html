@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/post-list.css">
+    <link rel="stylesheet" href="/css/post.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/"><img src="/images/sitebanner.png" alt="kalefetch" class="sitebanner"></a>
+            </div>
+            <nav>
+                <i>"Does anyone even make blogs anymore?"</i>
+            </nav>
+        </div>
+        <div class="page-content">
+            <div class="sidebar-left">
+                <ul>
+                    <li><a href="/">
+                        <img src="/images/icons/computer_icon.png" alt="Home" class="sidebar-icon">
+                        Home
+                    </a></li>
+                    <li><a href="/blog">
+                        <img src="/images/icons/book_icon.png" alt="Blog" class="sidebar-icon">
+                        Blog
+                    </a></li>
+                    <li><a href="/projects">
+                        <img src="/images/icons/folder_icon.png" alt="Projects" class="sidebar-icon">
+                        Projects
+                    </a></li>
+                    <li><a href="/surf">
+                        <div class="gif-container">
+                            <img src="/images/icons/globe_icon.png" alt="Surf" class="sidebar-icon">
+                            <img src="/images/icons/globe_icon_animated.gif" alt="Surf" class="sidebar-icon animated-icon">
+                        </div>
+                        Surf
+                    </a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                {{ block "main" . }}{{ end }}
+            </div> 
+            <div class="sidebar-right">
+                <h2>Links</h2>
+                <p>Back on the boring internet...</p>
+                <ul>
+                    <li><a href="https://youtube.com/@kalefetch">YouTube</a></li>
+                    <li><a href="https://github.com/kalefetch">Github</a></li>
+                </ul>
+
+                <h2>Hits</h2>
+                <p>Check out how many hits this website has!</p>
+                <div id="sfc423pmnjd7ahshas6rxujgkzzzutnwc17"></div><script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=423pmnjd7ahshas6rxujgkzzzutnwc17&down=async" async></script><br><noscript><a href="https://www.freecounterstat.com" title="page counter"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=423pmnjd7ahshas6rxujgkzzzutnwc17" border="0" title="page counter" alt="page counter"></a></noscript>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>© {{ now.Year }} — "don't copy me, plz."</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

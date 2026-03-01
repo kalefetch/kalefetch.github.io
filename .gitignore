@@ -1,0 +1,11 @@
+# Hugo temporary cache and build directories
+/public/
+/resources/_gen/
+/data/_gen/
+/assets/_gen/
+.hugo_build.lock
+
+# Editor/OS temporary files
+.DS_Store
+Thumbs.db
+*.log

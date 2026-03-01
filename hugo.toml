@@ -1,0 +1,6 @@
+baseURL = 'https://kalefetch.github.io/'
+languageCode = 'en-us'
+title = 'kalefetch'
+
+[permalinks]
+blog = "/blog/:slug/"
