@@ -1,6 +1,13 @@
 {{ define "main" }}
 
-<h1>Posts</h1>
+<h1>
+    Posts
+    {{ with .OutputFormats.Get "RSS" }}
+    <a href="{{ .RelPermalink }}" class="rss-button">
+        <img src="/images/icons/rss.svg" alt="RSS Feed" class="rss-icon">
+    </a>
+    {{ end }}
+</h1>
 
 <ul class="post-list">
     {{ range .Pages }}
