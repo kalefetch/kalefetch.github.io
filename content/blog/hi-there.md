@@ -2,6 +2,7 @@
 date = '2026-02-23T19:04:53-08:00'
 draft = false
 title = 'Hi there.'
+slug = "hi-there"
 +++
 
 Hi there.
